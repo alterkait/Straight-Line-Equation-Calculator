@@ -33,8 +33,16 @@ int main()
   c = y1 - (m * x1);
   
   cout << "Gradient: " << m << endl;
+
+  if (c < 0)
+  {
+    cout << "Equation of line: y = " << m << "x " << c << endl;
+  }
   
-  cout << "Equation of line: y = " << m << "x + " << c << endl; 
+  else
+  {
+    cout << "Equation of line: y = " << m << "x + " << c << endl; 
+  }
   
   return 0;
 }
